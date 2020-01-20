@@ -1,4 +1,4 @@
-package fi.utu.tech.gui.javafx;
+package fi.utu.tech.gui.javafx.teht2;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -20,8 +20,6 @@ public class OtherWindow extends BorderPane {
         BorderPane.setAlignment(teksti, Pos.TOP_CENTER);
         BorderPane.setMargin(teksti, new Insets(12,12,12,12));
         setTop(teksti);
-        //setCenter(c);
-        // create a stack pane 
         Label maailma = new Label("Maailma");
         maailma.setFont(new Font("Arial", 50));
         StackPane stack_pane = new StackPane(c,maailma); 
