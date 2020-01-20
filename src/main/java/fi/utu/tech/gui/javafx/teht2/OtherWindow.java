@@ -22,6 +22,7 @@ public class OtherWindow extends BorderPane {
         setTop(teksti);
         Label maailma = new Label("Maailma");
         maailma.setFont(new Font("Arial", 50));
+        maailma.setTextFill(Color.web("#FF0000"));
         StackPane stack_pane = new StackPane(c,maailma); 
         setCenter(stack_pane);
         setLeft(new ImageView(ResourceLoader.image("hmm.png")));

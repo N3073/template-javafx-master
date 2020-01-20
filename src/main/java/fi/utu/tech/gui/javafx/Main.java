@@ -1,6 +1,7 @@
 package fi.utu.tech.gui.javafx;
 
 import fi.utu.tech.gui.javafx.teht1.MainApp1;
+import fi.utu.tech.gui.javafx.teht2.MainApp2;
 
 public class Main {
     /**
@@ -22,7 +23,15 @@ public class Main {
             case 1:
             	//MainApp1.launch(MainApp1.class, args); break;
             case 2:
+            	//MainApp2.launch(MainApp1.class, args); break;
             case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
             default: MainApp.launch(MainApp.class, args); break;
         }
     }
