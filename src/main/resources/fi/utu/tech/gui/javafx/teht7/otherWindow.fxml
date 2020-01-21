@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -44,7 +45,11 @@
                <children>
                   <TextField />
                   <TextField />
-                  <TextField />
+                  <TextField>
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </TextField>
                </children>
             </HBox>
          </children>

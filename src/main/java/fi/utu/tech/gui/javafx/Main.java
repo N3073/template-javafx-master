@@ -5,6 +5,8 @@ import fi.utu.tech.gui.javafx.teht2.MainApp2;
 import fi.utu.tech.gui.javafx.teht3.MainApp3;
 import fi.utu.tech.gui.javafx.teht4.MainApp4;
 import fi.utu.tech.gui.javafx.teht5.MainApp5;
+import fi.utu.tech.gui.javafx.teht6.MainApp6;
+import fi.utu.tech.gui.javafx.teht7.MainApp7;
 
 public class Main {
     /**
@@ -19,7 +21,7 @@ public class Main {
         System.out.println("Stage A");
         if (args.length == 1 && args[0].equals("--test")) return;
 
-        int exercise = 5;
+        int exercise = 7;
         if (args.length == 1) exercise = Integer.parseInt(args[0]);
         //exercise=1;
         switch(exercise) {
@@ -34,9 +36,9 @@ public class Main {
             case 5:
             	MainApp5.launch(MainApp5.class, args); break;
             case 6:
-            	//MainApp6.launch(MainApp6.class, args); break;
+            	MainApp6.launch(MainApp6.class, args); break;
             case 7:
-            	//MainApp7.launch(MainApp7.class, args); break;
+            	MainApp7.launch(MainApp7.class, args); break;
             case 8:
             	//MainApp8.launch(MainApp8.class, args); break;
             case 9:
