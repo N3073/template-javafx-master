@@ -1,11 +1,11 @@
-package fi.utu.tech.gui.javafx.teht7;
+package fi.utu.tech.gui.javafx.teht10;
 
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class MainApp7 extends Application {
+public class MainApp10 extends Application {
 
     // https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html
 
@@ -33,15 +33,16 @@ public class MainApp7 extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         System.out.println("Stage C");
-        FXMLController cont = new FXMLController();
-        cont.setLabel("Welcome!");
-        Scene main = new Scene(new MainWindow(cont));
+        
+        ResourceLoader<Parent, FXMLController> loader = new ResourceLoader<>("scene.fxml");
 
+        loader.controller.setLabel("Welcome!");
 
-        main.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+        Scene scene = new Scene(loader.root);
+        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         
         stage.setTitle("JavaFX template");
-        stage.setScene(main);
+        stage.setScene(scene);
         stage.show();
         System.out.println("Stage D");
     }

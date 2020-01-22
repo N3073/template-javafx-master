@@ -13,6 +13,7 @@ import javafx.scene.text.TextAlignment;
 
 public class OtherWindow extends BorderPane {
     public OtherWindow() {
+    	System.out.println("ikkuna1");
     	Text teksti = new Text("Terve");
         Circle c = new Circle(200, Color.NAVY);
         Font fontti = new Font("Arial", 20);

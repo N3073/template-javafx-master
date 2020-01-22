@@ -1,4 +1,4 @@
-package fi.utu.tech.gui.javafx.teht7;
+package fi.utu.tech.gui.javafx.teht8;
 
 
 import javafx.application.Platform;

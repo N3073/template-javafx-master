@@ -1,4 +1,4 @@
-package fi.utu.tech.gui.javafx.teht7;
+package fi.utu.tech.gui.javafx.teht9;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -43,9 +43,9 @@ public class MainWindow extends BorderPane{
 	
 	
 	Button dialog = new Button("Display a dialog");
-	//dialog.setOnAction(e -> cont.handleDialogButton(e));
+	dialog.setOnAction(e -> cont.handleDialogButton(e));
 	Button exit = new Button("Exit");
-	//exit.setOnAction(e -> cont.handleExitButton(e));
+	exit.setOnAction(e -> cont.handleExitButton(e));
 	open.setMinWidth(150);
 	dialog.setMinWidth(150);
 	exit.setMinWidth(150);

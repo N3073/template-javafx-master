@@ -1,11 +1,11 @@
-package fi.utu.tech.gui.javafx.teht7;
+package fi.utu.tech.gui.javafx.teht8;
 
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class MainApp7 extends Application {
+public class MainApp8 extends Application {
 
     // https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html
 
